@@ -6,7 +6,7 @@
 This is a ESP32 project dedicated to read SENT protocal signal. Since ESP32 is cheap and has very fast sampling rate. It can read SENT signal。
 Author is not a professional coder and don't know how to use github, but I uploaded this project anyway.
 The main.c in main folder is the essential code, it allow us to read severial channel SENT signal at once.
-But the SENT frame won't be continuous if it read 2 or more signals. If you want to parse the serial channel of the SENT signal, you need to only read one channel, so ESP32 could have the processing speed to read countinuous SENT frames.
+But the SENT frame won't be continuous if it read 2 or more signals. If you want to parse the serial channel of the SENT signal, you need to only read one channel, so ESP32 could have the processing speed to read continuously SENT frames.
 
 ## Example folder contents
 
