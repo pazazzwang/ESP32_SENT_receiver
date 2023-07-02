@@ -1,18 +1,12 @@
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- |
 
-# _Sample project_
+# _ESP32_SENT_receiver_
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
-
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
-
-
-
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+This is a ESP32 project dedicated to read SENT protocal signal. Since ESP32 is cheap and has very fast sampling rate. It can read SENT signal。
+Author is not a professional coder and don't know how to use github, but I uploaded this project anyway.
+The main.c in main folder is the essential code, it allow us to read severial channel SENT signal at once.
+But the SENT frame won't be continuous if it read 2 or more signals. If you want to parse the serial channel of the SENT signal, you need to only read one channel, so ESP32 could have the processing speed to read countinuous SENT frames.
 
 ## Example folder contents
 
